@@ -25,35 +25,42 @@
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'colony_suppliers' ); ?></a>
 
-	<header id="masthead" class="site-header">
-		<div class="site-branding">
-			<?php
-			the_custom_logo();
-			if ( is_front_page() && is_home() ) :
-				?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-				<?php
-			else :
-				?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-				<?php
-			endif;
-			$colony_suppliers_description = get_bloginfo( 'description', 'display' );
-			if ( $colony_suppliers_description || is_customize_preview() ) :
-				?>
-				<p class="site-description"><?php echo $colony_suppliers_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
-			<?php endif; ?>
-		</div><!-- .site-branding -->
+	<!-- Navbar -->
+<nav class="bg-white shadow-md">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between h-16">
+      <div class="flex items-center">
+        <a href="#" class="text-2xl font-bold text-gray-800">Logo </a>
+      </div>
+      <div class="hidden md:flex space-x-6 items-center">
+        <a href="#" class="text-gray-600 hover:text-blue-600">Home</a>
+        <a href="#" class="text-gray-600 hover:text-blue-600">About</a>
+        <a href="#" class="text-gray-600 hover:text-blue-600">Services</a>
+        <a href="#" class="text-gray-600 hover:text-blue-600">Contact</a>
+      </div>
+      <div class="md:hidden flex items-center">
+        <button id="mobile-menu-button" class="text-gray-600 focus:outline-none">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="md:hidden hidden px-4 pt-2 pb-4 space-y-1">
+    <a href="#" class="block text-gray-600 hover:text-blue-600">Home</a>
+    <a href="#" class="block text-gray-600 hover:text-blue-600">About</a>
+    <a href="#" class="block text-gray-600 hover:text-blue-600">Services</a>
+    <a href="#" class="block text-gray-600 hover:text-blue-600">Contact</a>
+  </div>
+</nav>
 
-		<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'colony_suppliers' ); ?></button>
-			<?php
-			wp_nav_menu(
-				array(
-					'theme_location' => 'menu-1',
-					'menu_id'        => 'primary-menu',
-				)
-			);
-			?>
-		</nav><!-- #site-navigation -->
-	</header>
+<script>
+  const btn = document.getElementById("mobile-menu-button");
+  const menu = document.getElementById("mobile-menu");
+  btn.addEventListener("click", () => {
+    menu.classList.toggle("hidden");
+  });
+</script>
