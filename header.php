@@ -29,8 +29,10 @@
  <nav class="navbar">
     <div class="container">
       <div class="navbar-logo">
-        <a href="#">Logo</a>
-      </div>
+      <a href="<?php echo esc_url(home_url('/')); ?>">
+        <img class="logo-default" src="<?php echo get_template_directory_uri(); ?>/assets/images/colony-logo1.png" alt="colony Logo">
+      </a>
+    </div>
       <div class="navbar-links" id="navbar-links">
         <a href="#">Home</a>
         <a href="#">About</a>
@@ -49,10 +51,11 @@
     </div>
   </nav>
 
-<script>
-  const btn = document.getElementById("mobile-menu-button");
-  const menu = document.getElementById("mobile-menu");
-  btn.addEventListener("click", () => {
-    menu.classList.toggle("hidden");
-  });
-</script>
+  <script>
+    const mobileMenuBtn = document.getElementById("mobile-menu-button");
+    const mobileMenu = document.getElementById("mobile-menu");
+
+    mobileMenuBtn.addEventListener("click", () => {
+      mobileMenu.classList.toggle("show");
+    });
+  </script>
