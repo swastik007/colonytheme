@@ -85,6 +85,9 @@ body {
   margin-bottom: 20px;
 }
 .footer-section .footer-heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 30px;
   color: #fff;
   font-weight: 700;
