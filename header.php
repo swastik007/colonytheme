@@ -25,37 +25,29 @@
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'colony_suppliers' ); ?></a>
 
-	<!-- Navbar -->
-<nav class="bg-white shadow-md">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="flex justify-between h-16">
-      <div class="flex items-center">
-        <a href="#" class="text-2xl font-bold text-gray-800">Logo </a>
+ <!-- Navbar -->
+ <nav class="navbar">
+    <div class="container">
+      <div class="navbar-logo">
+        <a href="#">Logo</a>
       </div>
-      <div class="hidden md:flex space-x-6 items-center">
-        <a href="#" class="text-gray-600 hover:text-blue-600">Home</a>
-        <a href="#" class="text-gray-600 hover:text-blue-600">About</a>
-        <a href="#" class="text-gray-600 hover:text-blue-600">Services</a>
-        <a href="#" class="text-gray-600 hover:text-blue-600">Contact</a>
+      <div class="navbar-links" id="navbar-links">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
       </div>
-      <div class="md:hidden flex items-center">
-        <button id="mobile-menu-button" class="text-gray-600 focus:outline-none">
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-              d="M4 6h16M4 12h16M4 18h16" />
-          </svg>
-        </button>
+      <div class="mobile-menu-button" id="mobile-menu-button">
+        <span>&#9776;</span>
       </div>
     </div>
-  </div>
-  <!-- Mobile Menu -->
-  <div id="mobile-menu" class="md:hidden hidden px-4 pt-2 pb-4 space-y-1">
-    <a href="#" class="block text-gray-600 hover:text-blue-600">Home</a>
-    <a href="#" class="block text-gray-600 hover:text-blue-600">About</a>
-    <a href="#" class="block text-gray-600 hover:text-blue-600">Services</a>
-    <a href="#" class="block text-gray-600 hover:text-blue-600">Contact</a>
-  </div>
-</nav>
+    <div class="mobile-menu" id="mobile-menu">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Contact</a>
+    </div>
+  </nav>
 
 <script>
   const btn = document.getElementById("mobile-menu-button");

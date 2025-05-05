@@ -139,5 +139,16 @@ function theme_stylescript() {
 
 	// Theme custom JS
 	wp_enqueue_script( 'theme_js', $theme_uri . '/assets/js/theme.js', array( 'jquery' ), '1.0.0', true );
+
+	//owlcarousel
+	wp_enqueue_style( 'owlcarousel_css', $theme_uri . '/assets/vendor/css/owl.carousel.min.css' );
+
+
+
+	// enqueue scripts
+	wp_enqueue_script( 'bootstrap_js', $theme_uri . '/assets/vendor/js/bootstrap.min.js', array('jquery'), null, true );
+	wp_enqueue_script( 'owlcarousel', $theme_uri . '/assets/vendor/js/owl.carousel.min.js', array('jquery'), null, true );
+
+
 }
 add_action( 'wp_enqueue_scripts', 'theme_stylescript' );
