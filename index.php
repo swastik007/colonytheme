@@ -20,11 +20,6 @@
  <?php get_template_part( 'template-parts/banner-area', 'none' ); ?>
  <!-- banner section area -->
  
- 
- <!-- about section area -->
- <?php get_template_part( 'template-parts/about-resort', 'none' ); ?>
- <!-- about section area -->
-  
  <!-- highlight section area -->
  <?php get_template_part( 'template-parts/highlight', 'none' ); ?>
  <!-- highlight section area -->

@@ -8,57 +8,45 @@
  *
  * @package Colony_Suppliers
  */
-
 ?>
 
-	<footer id="colophon" class="site-footer">
-		<!-- Footer -->
-		<div class="bg-white py-12 px-6 shadow-sm border-t-2">
-		<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
-    
-    <!-- Branding -->
-    <div>
-      <div class="flex items-center gap-2">
-        
-        <span class="text-xl font-bold text-green-800">logo</span>
-      </div>
-      <p class="text-gray-500 mt-2">Get your groceries</p>
-      
-    </div>
-
-    <!-- Sitemap -->
-    <div>
-      <h4 class="font-semibold mb-3">Sitemap</h4>
-      <ul class="space-y-2 text-gray-600 text-sm">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Product Catalog</a></li>
-        <li><a href="#">Delivery & Service</a></li>
-        <li><a href="#">Contact Us </a></li>
-      </ul>
-    </div>
-
-    
-    
-
-    <!-- Utility -->
-    <div>
-      <h4 class="font-semibold mb-3">Utility</h4>
-      <ul class="space-y-2 text-gray-600 text-sm">
-        <li><a href="#">FAQ</a></li>
-        <li><a href="#">Terms & Conditions</a></li>
-      </ul>
-    </div>
-
-  </div>
-</div>
-</div>
-
-
-	</footer><!-- #colophon -->
+<div>
+    <!-- footer -->
+    <footer class="footer-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h2 class="footer-heading">
+                        <a href="#" class="logo">
+                            <img class="footer-logo" src="<?php echo get_template_directory_uri(); ?>/assets/images/colony-logo1.png" alt="Colony Logo">
+                        </a>
+                    </h2>
+                    <p class="menu">
+                        <a href="#">Home</a>
+                        <a href="#">Groceries</a>
+                        <a href="#">Frozen Meats</a>
+                        <a href="#">Gallery</a>
+                        <a href="#">Blog</a>
+                        <a href="#">Contact</a>
+                    </p>
+                    <ul class="footer-social p-0">
+                        <li><a href="#"><i class="bi bi-tiktok"></i></a></li>
+                        <li><a href="#"><i class="bi bi-facebook"></i></a></li>
+                        <li><a href="#"><i class="bi bi-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-md-12 text-center">
+                    <p class="copyright">
+                        Copyright ©<script>document.write(new Date().getFullYear());</script> All rights reserved
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
-
 </body>
 </html>
