@@ -19,6 +19,8 @@
  <!-- banner section area -->
  <?php get_template_part( 'template-parts/banner-area', 'none' ); ?>
  <!-- banner section area -->
+
+
  
  <!-- highlight section area -->
  <?php get_template_part( 'template-parts/highlight', 'none' ); ?>

@@ -126,11 +126,11 @@ function theme_stylescript() {
 
 	// Enqueue Tailwind-compiled stylesheet
 	wp_enqueue_style( 'colony_css', $theme_uri . '/assets/css/theme.css', array(), '0.9.1' );
-	wp_enqueue_style( 'bootstrap', $theme_uri . '/assets/vendor/css/bootstrap.min.css' );
+	wp_enqueue_style( 'bootstrap', $theme_uri . '/assets/css/bootstrap.min.css' );
 	wp_enqueue_style( 'bootstrap_icons', 'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css' );
 	//owlcarousel
-	wp_enqueue_style( 'owl_theme_css', $theme_uri . '/assets/vendor/css/owl.theme.default.css' );
-	wp_enqueue_style( 'owlcarousel_css', $theme_uri . '/assets/vendor/css/owl.carousel.min.css' );
+	wp_enqueue_style( 'owl_theme_css', $theme_uri . '/assets/css/owl.theme.default.css' );
+	wp_enqueue_style( 'owlcarousel_css', $theme_uri . '/assets/css/owl.carousel.min.css' );
 	
 	// Deregister default WordPress jQuery
 	wp_deregister_script( 'jquery' );
