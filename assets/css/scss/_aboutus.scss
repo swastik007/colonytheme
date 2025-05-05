@@ -1,0 +1,89 @@
+
+.about-us-section {
+  background-color: #5d3c2d; // Warm brown like your reference image
+  color: #fff;
+  padding: 4rem 2rem;
+  font-family: sans-serif;
+
+  .about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+
+    .about-image {
+      position: relative;
+      flex: 1 1 40%;
+      min-width: 300px;
+
+      img {
+        width: 100%;
+        border-top-right-radius: 200px;
+        display: block;
+        height: 40em;
+      }
+
+      // .curve-overlay {
+      //   position: absolute;
+      //   top: 0;
+      //   right: 0;
+      //   width: 100px;
+      //   height: 100px;
+      //   background-color: $primary;
+      //   border-bottom-left-radius: 100%;
+      //   z-index: 2;
+      // }
+    }
+
+    .about-content {
+      flex: 1 1 50%;
+      min-width: 300px;
+
+      h2 {
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-bottom: 0.5rem;
+
+        span {
+          color: $primary;
+        }
+      }
+
+      h4 {
+        font-size: 1.2rem;
+        font-weight: 500;
+        margin-bottom: 1rem;
+      }
+
+      p {
+        font-size: 1rem;
+        line-height: 1.6;
+        color: #e0dcd7;
+      }
+    }
+  }
+}
+
+// Responsive
+@media (max-width: 768px) {
+  .about-us-section {
+    .about-container {
+      flex-direction: column;
+
+      .about-image,
+      .about-content {
+        flex: 1 1 100%;
+      }
+
+      .about-image {
+        .curve-overlay {
+          width: 60px;
+          height: 60px;
+        }
+      }
+    }
+  }
+}
