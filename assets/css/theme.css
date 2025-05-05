@@ -9,7 +9,7 @@ body {
 }
 
 .navbar {
-  background-color: #fff;
+  background-color: #e8dcc2;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   position: relative;
 }
@@ -30,32 +30,36 @@ body {
   gap: 1.5rem;
 }
 .navbar .container .navbar-links a {
-  color: #666;
+  color: #e79a2e;
+  font-size: 24px;
+  font-weight: 600;
   text-decoration: none;
   transition: color 0.3s ease;
 }
 .navbar .container .navbar-links a:hover {
-  color: #e79a2e;
+  color: #6e0000;
+  text-decoration: underline;
 }
 .navbar .container .mobile-menu-button {
   display: none;
-  font-size: 24px;
+  font-size: 20px;
   cursor: pointer;
-  color: #666;
+  color: #e79a2e;
 }
 .navbar .mobile-menu {
   display: none;
   flex-direction: column;
   padding: 0.5rem 1rem;
-  background-color: white;
+  background-color: #e8dcc2;
 }
-.navbar .mobile-menu a {
+.navbar .mobile-menu tr a {
   padding: 0.5rem 0;
-  color: #666;
+  color: #e79a2e;
+  font-size: 24px;
   text-decoration: none;
 }
-.navbar .mobile-menu a:hover {
-  color: #e79a2e;
+.navbar .mobile-menu tr a:hover {
+  color: #6e0000;
 }
 .navbar .mobile-menu.show {
   display: flex;
