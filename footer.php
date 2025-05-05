@@ -18,7 +18,7 @@
                 <div class="col-md-12 text-center">
                     <h2 class="footer-heading">
                         <a href="#" class="logo">
-                            <img class="footer-logo" src="<?php echo get_template_directory_uri(); ?>/assets/images/kurintarretreat-logo.png" alt="Logo">
+                            <img class="footer-logo" src="<?php echo get_template_directory_uri(); ?>/assets/images/colony-logo1.png" alt="Colony Logo">
                         </a>
                     </h2>
                     <p class="menu">
