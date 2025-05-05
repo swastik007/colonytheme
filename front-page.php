@@ -22,8 +22,9 @@
 
   <!-- aboutus section area -->
   <?php get_template_part( 'template-parts/aboutus', 'none' ); ?>
- <!-- aboutus section area -->
-
+  <!-- aboutus section area -->
+  
+  <?php get_template_part( 'template-parts/highlight', 'none' ); ?>
 
  <?php
  
