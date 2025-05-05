@@ -144,7 +144,7 @@ function theme_stylescript() {
 	wp_enqueue_script( 'bootstrap_js', $theme_uri . '/assets/vendor/js/bootstrap.min.js', array('jquery'), null, true );
 	wp_enqueue_script( 'owlcarousel', $theme_uri . '/assets/vendor/js/owl.carousel.min.js', array('jquery'), null, true );
 	// Optional: Tailwind browser utilities (CDN-based)
-	// wp_enqueue_script( 'tailwind_browser', 'https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4', array(), null, true );
+	wp_enqueue_script( 'tailwind_browser', 'https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4', array(), null, true );
 
 
 }
