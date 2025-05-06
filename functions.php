@@ -125,7 +125,7 @@ function theme_stylescript() {
 	$theme_uri = get_template_directory_uri();
 
 	// Enqueue Tailwind-compiled stylesheet
-	wp_enqueue_style( 'colony_css', $theme_uri . '/assets/css/theme.css', array(), '0.9.1' );
+	wp_enqueue_style( 'colony_css', $theme_uri . '/assets/css/theme.css', array(), '0.10.0' );
 	wp_enqueue_style( 'bootstrap', $theme_uri . '/assets/css/bootstrap.min.css' );
 	wp_enqueue_style( 'bootstrap_icons', 'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css' );
 	//owlcarousel

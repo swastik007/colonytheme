@@ -1,0 +1,87 @@
+
+.chairman-message {
+  padding: 4rem 1.5rem;
+  background: #f9f9f9;
+
+  .container {
+    max-width: 1300px;
+    margin: 0 auto;
+  }
+
+  .message-box {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+    padding: 2rem;
+
+    .message-text {
+      flex: 1 1 60%;
+      padding-right: 2rem;
+
+      h2 {
+        font-size: 2rem;
+        color: #000;
+
+        span {
+          color: $primary;
+        }
+      }
+
+      p {
+        font-size: 1.1rem;
+        margin: 1.5rem 0;
+        color: #444;
+        line-height: 1.6;
+      }
+
+      h4 {
+        color: $primary;
+        font-weight: 600;
+
+        small {
+          display: block;
+          color: #777;
+          font-size: 0.9rem;
+          margin-top: 0.3rem;
+        }
+      }
+    }
+
+    .message-image {
+      flex: 1 1 40%;
+      text-align: center;
+
+      img {
+        width: 450px;
+        height: auto;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        // transform: rotate(-2deg);
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .chairman-message .message-box {
+    flex-direction: column;
+
+    .message-text {
+      padding-right: 0;
+      text-align: center;
+    }
+
+    .message-image {
+      margin-top: 2rem;
+
+      img {
+        width: 180px;
+      }
+    }
+  }
+}
