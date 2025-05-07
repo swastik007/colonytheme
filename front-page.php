@@ -15,7 +15,12 @@
  get_header();
  ?>
  
-	 
+ <!-- banner section area -->
+ <?php get_template_part( 'template-parts/homeslider', 'none' ); ?>
+ <!-- banner section area -->
+ <?php get_template_part( 'template-parts/highlight', 'none' ); ?>
+ <?php get_template_part( 'template-parts/whyus', 'none' ); ?>
+ 
  <!-- banner section area -->
  <?php get_template_part( 'template-parts/banner-area', 'none' ); ?>
  <!-- banner section area -->
@@ -24,7 +29,7 @@
   <?php get_template_part( 'template-parts/aboutus', 'none' ); ?>
   <!-- aboutus section area -->
   
-  <?php get_template_part( 'template-parts/highlight', 'none' ); ?>
+
 
  <?php
  

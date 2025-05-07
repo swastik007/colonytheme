@@ -12,39 +12,69 @@
 
 <div>
     <!-- footer -->
-    <footer class="footer-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 text-center">
-                    <h2 class="footer-heading">
-                        <a href="#" class="logo">
-                            <img class="footer-logo" src="<?php echo get_template_directory_uri(); ?>/assets/images/colony-logo1.png" alt="Colony Logo">
-                        </a>
-                    </h2>
-                    <p class="menu">
-                        <a href="#">Home</a>
-                        <a href="#">Groceries</a>
-                        <a href="#">Frozen Meats</a>
-                        <a href="#">Gallery</a>
-                        <a href="#">Blog</a>
-                        <a href="#">Contact</a>
-                    </p>
-                    <ul class="footer-social p-0">
-                        <li><a href="#"><i class="bi bi-tiktok"></i></a></li>
-                        <li><a href="#"><i class="bi bi-facebook"></i></a></li>
-                        <li><a href="#"><i class="bi bi-instagram"></i></a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="row mt-5">
-                <div class="col-md-12 text-center">
-                    <p class="copyright">
-                        Copyright ©<script>document.write(new Date().getFullYear());</script> All rights reserved
-                    </p>
-                </div>
-            </div>
+    <footer id="footer" class="footer dark-background">
+
+    <div class="container">
+      <div class="row gy-3">
+        <div class="col-lg-3 col-md-6 d-flex">
+          <i class="bi bi-geo-alt icon"></i>
+          <div class="address">
+            <h4>Address</h4>
+            <p>A108 Adam Street</p>
+            <p>New York, NY 535022</p>
+            <p></p>
+          </div>
+
         </div>
-    </footer>
+
+        <div class="col-lg-3 col-md-6 d-flex">
+          <i class="bi bi-telephone icon"></i>
+          <div>
+            <h4>Contact</h4>
+            <p>
+              <strong>Phone:</strong> <span>+1 5589 55488 55</span><br>
+              <strong>Email:</strong> <span>info@example.com</span><br>
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 d-flex">
+          <i class="bi bi-clock icon"></i>
+          <div>
+            <h4>Opening Hours</h4>
+            <p>
+              <strong>Mon-Sat:</strong> <span>11AM - 23PM</span><br>
+              <strong>Sunday</strong>: <span>Closed</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <h4>Follow Us</h4>
+          <div class="social-links d-flex">
+            <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
+            <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">Colony</strong> <span>All Rights Reserved</span></p>
+      <div class="credits">
+        
+        Designed by <a href="#">VS Nepal</a>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
 </div><!-- #page -->
 
 <?php wp_footer(); ?>

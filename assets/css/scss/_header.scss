@@ -1,15 +1,5 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: colonyFont;
-}
-
 .navbar {
-  background-color: #fff;
+  background-color: white;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   position: relative;
 
@@ -23,11 +13,9 @@ body {
     justify-content: space-between;
 
     .navbar-logo {
-      
-        .logo-default{
-            width: 100px;
-
-        }
+      .logo-default {
+        width: 100px;
+      }
     }
 
     .navbar-links {
@@ -35,21 +23,24 @@ body {
       gap: 1.5rem;
 
       a {
-        color: #666;
+        color: $primary;
+        font-size: 24px;
+        font-weight: 600;
         text-decoration: none;
         transition: color 0.3s ease;
 
         &:hover {
-          color: $primary;
+          color: $secondary;
+          text-decoration: underline;
         }
       }
     }
 
     .mobile-menu-button {
       display: none;
-      font-size: 24px;
+      font-size: 20px;
       cursor: pointer;
-      color: #666;
+      color: $primary;
     }
   }
 
@@ -57,15 +48,15 @@ body {
     display: none;
     flex-direction: column;
     padding: 0.5rem 1rem;
-    background-color: white;
-
-    a {
+    background-color: $primarylight;
+    tr a {
       padding: 0.5rem 0;
-      color: #666;
+      color: $primary;
+      font-size: 24px;
       text-decoration: none;
 
       &:hover {
-        color: $primary;
+        color: $secondary;
       }
     }
 
