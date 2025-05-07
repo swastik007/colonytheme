@@ -47,5 +47,9 @@
     <?php get_template_part( 'template-parts/ourservice', 'none' ); ?>
 <!-- our service section area -->
 
+<!-- testimonials section area -->
+<?php get_template_part( 'template-parts/testimonials', 'none' ); ?>
+<!-- testimonials section area -->
+
 <?php get_footer(); ?>
  
