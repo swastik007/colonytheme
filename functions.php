@@ -127,6 +127,10 @@ function theme_stylescript() {
 	// Enqueue Tailwind-compiled stylesheet
 	wp_enqueue_style( 'colony_css', $theme_uri . '/assets/css/theme.css', array(), '0.10.0' );
 	wp_enqueue_style( 'bootstrap', $theme_uri . '/assets/css/bootstrap.min.css' );
+	wp_enqueue_style('bootstrap-css', 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css');
+
+	wp_enqueue_script('bootstrap-js', 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js', array(), null, true);
+
 	wp_enqueue_style( 'bootstrap_icons', 'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css' );
 	//owlcarousel
 	wp_enqueue_style( 'owl_theme_css', $theme_uri . '/assets/css/owl.theme.default.css' );
