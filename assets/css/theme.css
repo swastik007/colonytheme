@@ -73,6 +73,10 @@ h1, h2, h3 {
   box-sizing: border-box;
 }
 
+body {
+  font-family: colonyFont;
+}
+
 .navbar {
   background-color: white;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -243,66 +247,121 @@ h1, h2, h3 {
     transform: translateY(-10px);
   }
 }
-.about-us-section {
-  background-color: #5d3c2d;
-  color: #fff;
-  padding: 4rem 2rem;
-  font-family: sans-serif;
+.about-hero {
+  background-color: #c3c3c3;
+  padding: 100px 0;
 }
-.about-us-section .about-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  gap: 2rem;
-}
-.about-us-section .about-container .about-image {
-  position: relative;
-  flex: 1 1 40%;
-  min-width: 300px;
-}
-.about-us-section .about-container .about-image img {
-  width: 100%;
-  border-top-right-radius: 200px;
-  display: block;
-  height: 40em;
-}
-.about-us-section .about-container .about-content {
-  flex: 1 1 50%;
-  min-width: 300px;
-}
-.about-us-section .about-container .about-content h2 {
-  font-size: 2.5rem;
-  font-weight: 700;
-  margin-bottom: 0.5rem;
-}
-.about-us-section .about-container .about-content h2 span {
+.about-hero h1 {
+  font-size: 3rem;
+  font-weight: 800;
   color: #e79a2e;
 }
-.about-us-section .about-container .about-content h4 {
-  font-size: 1.2rem;
-  font-weight: 500;
-  margin-bottom: 1rem;
+.about-hero p {
+  font-size: 1.25rem;
+  color: #000;
 }
-.about-us-section .about-container .about-content p {
-  font-size: 1rem;
-  line-height: 1.6;
-  color: #e0dcd7;
+.about-hero img {
+  border: 2px solid #e8dcc2;
+  border-radius: 20px;
+  min-width: 500px;
+  max-height: 400px;
+  animation: zoomIn 1s ease 0.5s both;
 }
 
-@media (max-width: 768px) {
-  .about-us-section .about-container {
-    flex-direction: column;
+.about-values {
+  background-color: #e79a2e;
+  color: #000;
+  text-align: center;
+  padding: 80px 0;
+}
+.about-values h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+.about-values i {
+  color: #fff;
+}
+.about-values h5 {
+  font-size: 1.5rem;
+  margin-top: 15px;
+  font-weight: 600;
+}
+.about-values p {
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+.about-team {
+  background-color: #6e0000;
+  color: white;
+  text-align: center;
+  padding: 80px 0;
+}
+.about-team h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+.about-team p {
+  font-size: 1.25rem;
+}
+.about-team .team-card {
+  background-color: #e8dcc2;
+  color: #000;
+  transition: transform 0.3s ease, box-shadow 0.3s;
+  border-radius: 10px;
+  padding: 30px;
+}
+.about-team .team-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.about-team .team-card img {
+  width: 120px;
+  height: 120px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #e79a2e;
+}
+.about-team .team-card h5 {
+  margin-top: 15px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #6e0000;
+}
+.about-team .team-card p {
+  color: #222;
+  font-size: 1.25rem;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
   }
-  .about-us-section .about-container .about-image,
-  .about-us-section .about-container .about-content {
-    flex: 1 1 100%;
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
-  .about-us-section .about-container .about-image .curve-overlay {
-    width: 60px;
-    height: 60px;
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
   }
 }
 .highlight-items-v2 {
@@ -341,7 +400,8 @@ h1, h2, h3 {
 .highlight-items-v2 .container .items-grid .item-card img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   display: block;
 }
 .highlight-items-v2 .container .items-grid .item-card .card-label {
@@ -354,7 +414,8 @@ h1, h2, h3 {
   font-size: 1.2rem;
   font-weight: 500;
   text-align: center;
-  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
 }
 
 @media (max-width: 768px) {
