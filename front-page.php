@@ -33,8 +33,10 @@
   <?php get_template_part( 'template-parts/highlight', 'none' ); ?>
   
   <?php get_template_part( 'template-parts/chairman-message', 'none' ); ?>
+  
+  <?php get_template_part( 'template-parts/ourservice', 'none' ); ?>
 
- <?php
+  <?php
  
  get_footer();
  

@@ -17,6 +17,56 @@ h1, h2, h3 {
   src: url("../../fonts/Harper Bold Bold.woff");
   font-weight: 700;
 }
+@font-face {
+  font-family: colonyFont;
+  src: url("../../fonts/manrope-semibold.otf");
+  font-weight: 600;
+}
+@font-face {
+  font-family: colonyFont;
+  src: url("../../fonts/manrope-semibold.woff");
+  font-weight: 600;
+}
+@font-face {
+  font-family: colonyFont;
+  src: url("../../fonts/manrope-light.otf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: colonyFont;
+  src: url("../../fonts/manrope-light.woff");
+  font-weight: 400;
+}
+@font-face {
+  font-family: colonyFont;
+  src: url("../../fonts/manrope-medium.otf");
+  font-weight: 300;
+}
+@font-face {
+  font-family: colonyFont;
+  src: url("../../fonts/manrope-medium.woff");
+  font-weight: 300;
+}
+@font-face {
+  font-family: colonyFont;
+  src: url("../../fonts/manrope-regular.otf");
+  font-weight: 200;
+}
+@font-face {
+  font-family: colonyFont;
+  src: url("../../fonts/manrope-regular.woff");
+  font-weight: 200;
+}
+@font-face {
+  font-family: colonyFont;
+  src: url("../../fonts/manrope-thin.otf");
+  font-weight: 100;
+}
+@font-face {
+  font-family: colonyFont;
+  src: url("../../fonts/manrope-thin.woff");
+  font-weight: 100;
+}
 * {
   margin: 0;
   padding: 0;
@@ -315,7 +365,6 @@ h1, h2, h3 {
     grid-template-columns: 1fr;
   }
 }
-<<<<<<< HEAD
 /*--------------------------------------------------------------
 # Why Us Section
 --------------------------------------------------------------*/
@@ -385,7 +434,8 @@ h1, h2, h3 {
 .why-us .icon-box:hover i {
   color: #ffffff;
   background: #e79a2e;
-=======
+}
+
 .chairman-message {
   padding: 4rem 1.5rem;
   background: #f9f9f9;
@@ -457,5 +507,73 @@ h1, h2, h3 {
   .chairman-message .message-box .message-image img {
     width: 180px;
   }
->>>>>>> 347a3e5ff1a0a4097c44b9cf59dfd3dd76bab378
+}
+.services-section {
+  padding: 4rem 2rem;
+  background-color: #fdfdfd;
+  font-family: "Segoe UI", sans-serif;
+}
+.services-section .services-header {
+  text-align: center;
+}
+.services-section .services-header h2 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+.services-section .services-header p {
+  font-size: 1.1rem;
+  color: #555;
+}
+.services-section .services-intro {
+  text-align: center;
+  margin: 3rem 0;
+}
+.services-section .services-intro .headline {
+  font-size: 1.4rem;
+}
+.services-section .services-intro .headline em {
+  font-style: italic;
+  color: #1e88e5;
+}
+.services-section .services-intro .headline strong {
+  font-weight: bold;
+  color: #2e7d32;
+}
+.services-section .services-intro .contact-link {
+  display: inline-block;
+  margin-top: 1rem;
+  color: #000;
+  text-decoration: underline;
+  font-weight: 600;
+}
+.services-section .services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+.services-section .services-grid .service-card {
+  background-color: #fff;
+  padding: 1.5rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s;
+}
+.services-section .services-grid .service-card:hover {
+  transform: translateY(-5px);
+}
+.services-section .services-grid .service-card img {
+  height: 50px;
+  margin-bottom: 1rem;
+}
+.services-section .services-grid .service-card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+.services-section .services-grid .service-card p {
+  font-size: 0.95rem;
+  color: #666;
 }/*# sourceMappingURL=theme.css.map */
