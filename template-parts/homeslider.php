@@ -1,17 +1,35 @@
-  <!-- Hero Section -->
-<section id="hero" class="hero section light-background">
-    <div class="container">
-    <div class="row gy-4 justify-content-center justify-content-lg-between">
-        <div class="col-lg-5 order-2 order-lg-1 d-flex flex-column justify-content-center">
-        <h1 data-aos="fade-up">We Help to Scale your Business</h1>
-        <p data-aos="fade-up" data-aos-delay="100">We are team of talented designers making websites with Bootstrap</p>
-        <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
-            <a href="#book-a-table" class="btn-get-started">Know More</a>
-        </div>
-        </div>
-        <div class="col-lg-5 order-1 order-lg-2 hero-img" data-aos="zoom-out">
-        <img  src="<?php echo get_template_directory_uri(); ?>/assets/images/img4.jpg" class="img-fluid animated" alt="">
-        </div>
+<!-- Hero Section -->
+<div class="custom-slider owl-carousel">
+  <div class="slide d-flex align-items-center">
+    <div class="left-text w-50 p-4">
+      <h1>We Help to Scale your Business</h1>
+      <p>This is the paragraph for the first slide. Add your own content here.</p>
+        <a href="#">Know More</a>
     </div>
+    <div class="right-image w-50 p-4">
+      <img src="<?php echo get_template_directory_uri(); ?>/assets/images/img3.jpg" class="img-fluid" alt="Slide 1">
     </div>
-</section><!-- /Hero Section -->
+  </div>
+
+  <div class="slide d-flex align-items-center">
+    <div class="left-text w-50 p-4">
+      <h1>Slide Title 2</h1>
+      <p>This is the paragraph for the second slide. Update with your supplier info.</p>
+      <a href="#">Know More</a>
+    </div>
+    <div class="right-image w-50 p-4">
+      <img src="<?php echo get_template_directory_uri(); ?>/assets/images/img1.jpg" class="img-fluid" alt="Slide 2">
+    </div>
+  </div>
+
+  <div class="slide d-flex align-items-center">
+    <div class="left-text w-50 p-4">
+      <h1>Slide Title 2</h1>
+      <p>This is the paragraph for the second slide. Update with your supplier info.</p>
+      <a href="#">Know More</a>
+    </div>
+    <div class="right-image w-50 p-4">
+      <img src="<?php echo get_template_directory_uri(); ?>/assets/images/img2.jpg" class="img-fluid" alt="Slide 2">
+    </div>
+  </div>
+</div>

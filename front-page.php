@@ -22,6 +22,23 @@
 <!-- Chairman's message section area -->
     <?php get_template_part( 'template-parts/chairman-message', 'none' ); ?>
 <!-- Chairman's message section area -->
+ <!-- banner section area -->
+ <?php get_template_part( 'template-parts/banner-area', 'none' ); ?>
+ <!-- banner section area -->
+
+  <!-- aboutus section area -->
+  <?php get_template_part( 'template-parts/aboutus', 'none' ); ?>
+  <!-- aboutus section area -->
+  
+
+  <?php get_template_part( 'template-parts/highlight', 'none' ); ?>
+  
+  <?php get_template_part( 'template-parts/chairman-message', 'none' ); ?>
+  
+  <?php get_template_part( 'template-parts/ourservice', 'none' ); ?>
+  
+
+  <?php
  
 <!-- aboutus section area -->
     <?php get_template_part( 'template-parts/aboutus', 'none' ); ?>
