@@ -146,9 +146,9 @@ function theme_stylescript() {
 	wp_enqueue_script( 'jquery' );
 
 	// enqueue scripts
+	wp_enqueue_script( 'bootstrap_js', $theme_uri . '/assets/js/bootstrap.min.js', array('jquery'), null, true );
+	wp_enqueue_script( 'owlcarousel', $theme_uri . '/assets/js/owl.carousel.min.js', array('jquery'), null, true );
 	wp_enqueue_script( 'theme_js', $theme_uri . '/assets/js/theme.js', array( 'jquery' ), '1.0.0', true );
-	wp_enqueue_script( 'bootstrap_js', $theme_uri . '/assets/vendor/js/bootstrap.min.js', array('jquery'), null, true );
-	wp_enqueue_script( 'owlcarousel', $theme_uri . '/assets/vendor/js/owl.carousel.min.js', array('jquery'), null, true );
 	// Optional: Tailwind browser utilities (CDN-based)
 	wp_enqueue_script( 'tailwind_browser', 'https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4', array(), null, true );
 

@@ -1,16 +1,18 @@
 .services-section {
     padding: 4rem 2rem;
     background-color: #fdfdfd;
-    font-family: 'Segoe UI', sans-serif;
+    font-family: colonyFont;
   
     .services-header {
       text-align: center;
       h2 {
         font-size: 2.5rem;
         margin-bottom: 0.5rem;
+        font-weight: 700;
+        color: $primary;
       }
       p {
-        font-size: 1.1rem;
+        font-size: 1.25rem;
         color: #555;
       }
     }
@@ -19,7 +21,7 @@
       text-align: center;
       margin: 3rem 0;
       .headline {
-        font-size: 1.4rem;
+        font-size: 1.5rem;
         em {
           font-style: italic;
           color: #1e88e5;
@@ -28,13 +30,6 @@
           font-weight: bold;
           color: #2e7d32;
         }
-      }
-      .contact-link {
-        display: inline-block;
-        margin-top: 1rem;
-        color: #000;
-        text-decoration: underline;
-        font-weight: 600;
       }
     }
   
@@ -60,17 +55,21 @@
         img {
           height: 50px;
           margin-bottom: 1rem;
+          margin-left: 45%;
+          margin-right: 45%;
         }
   
         h3 {
           font-size: 1.25rem;
           margin-bottom: 0.5rem;
           color: #333;
+          font-weight: 600;
         }
   
         p {
-          font-size: 0.95rem;
+          font-size: 1.25rem;
           color: #666;
+          font-weight: 400;
         }
       }
     }

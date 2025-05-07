@@ -191,58 +191,32 @@ h1, h2, h3 {
   font-size: 13px;
 }
 
-/*--------------------------------------------------------------
-# Hero Section
---------------------------------------------------------------*/
-.hero {
-  width: 100%;
-  min-height: 60vh;
-  position: relative;
-  padding: 60px 0;
+.custom-slider .slide {
+  min-height: 400px;
   display: flex;
   align-items: center;
-  background-color: #e8dcc2;
+  background-color: #f9f9f9;
+  font-family: colonyFont;
 }
-.hero h1 {
-  margin: 0;
-  font-size: 64px;
-  font-weight: 700;
+.custom-slider .slide .left-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
 }
-.hero p {
-  color: color-mix(in srgb, var(--default-color), transparent 30%);
-  margin: 5px 0 30px 0;
-  font-size: 20px;
-  font-weight: 400;
+.custom-slider .slide .left-text p {
+  font-size: 1.25rem;
+  color: #444;
 }
-.hero .btn-get-started {
-  color: white;
-  background: #e79a2e;
-  font-weight: 400;
-  font-size: 15px;
-  letter-spacing: 1px;
-  display: inline-block;
-  padding: 10px 28px 12px 28px;
-  border-radius: 50px;
-  transition: 0.5s;
-  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.1);
+.custom-slider .slide .right-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
 }
-.hero .btn-get-started:hover {
-  color: #e79a2e;
-  background: #6e0000;
-  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.1);
-}
-.hero .animated {
-  animation: up-down 2s ease-in-out infinite alternate-reverse both;
+.custom-slider .owl-nav,
+.custom-slider .owl-dots {
+  margin-top: 15px;
+  text-align: center;
 }
 
-@keyframes up-down {
-  0% {
-    transform: translateY(10px);
-  }
-  100% {
-    transform: translateY(-10px);
-  }
-}
 .about-us-section {
   background-color: #5d3c2d;
   color: #fff;
@@ -341,7 +315,8 @@ h1, h2, h3 {
 .highlight-items-v2 .container .items-grid .item-card img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   display: block;
 }
 .highlight-items-v2 .container .items-grid .item-card .card-label {
@@ -354,7 +329,8 @@ h1, h2, h3 {
   font-size: 1.2rem;
   font-weight: 500;
   text-align: center;
-  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
 }
 
 @media (max-width: 768px) {
@@ -439,6 +415,7 @@ h1, h2, h3 {
 .chairman-message {
   padding: 4rem 1.5rem;
   background: #f9f9f9;
+  height: 100vh;
 }
 .chairman-message .container {
   max-width: 1300px;
@@ -511,7 +488,7 @@ h1, h2, h3 {
 .services-section {
   padding: 4rem 2rem;
   background-color: #fdfdfd;
-  font-family: "Segoe UI", sans-serif;
+  font-family: colonyFont;
 }
 .services-section .services-header {
   text-align: center;
@@ -519,9 +496,11 @@ h1, h2, h3 {
 .services-section .services-header h2 {
   font-size: 2.5rem;
   margin-bottom: 0.5rem;
+  font-weight: 700;
+  color: #e79a2e;
 }
 .services-section .services-header p {
-  font-size: 1.1rem;
+  font-size: 1.25rem;
   color: #555;
 }
 .services-section .services-intro {
@@ -529,7 +508,7 @@ h1, h2, h3 {
   margin: 3rem 0;
 }
 .services-section .services-intro .headline {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
 }
 .services-section .services-intro .headline em {
   font-style: italic;
@@ -538,13 +517,6 @@ h1, h2, h3 {
 .services-section .services-intro .headline strong {
   font-weight: bold;
   color: #2e7d32;
-}
-.services-section .services-intro .contact-link {
-  display: inline-block;
-  margin-top: 1rem;
-  color: #000;
-  text-decoration: underline;
-  font-weight: 600;
 }
 .services-section .services-grid {
   display: grid;
@@ -567,13 +539,17 @@ h1, h2, h3 {
 .services-section .services-grid .service-card img {
   height: 50px;
   margin-bottom: 1rem;
+  margin-left: 45%;
+  margin-right: 45%;
 }
 .services-section .services-grid .service-card h3 {
   font-size: 1.25rem;
   margin-bottom: 0.5rem;
   color: #333;
+  font-weight: 600;
 }
 .services-section .services-grid .service-card p {
-  font-size: 0.95rem;
+  font-size: 1.25rem;
   color: #666;
+  font-weight: 400;
 }/*# sourceMappingURL=theme.css.map */

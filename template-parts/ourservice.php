@@ -6,27 +6,26 @@
 
   <div class="services-intro">
     <p class="headline">We specialize in delivering <em>freshness</em> and <strong>reliability</strong> to your kitchen.</p>
-    <a href="#contact" class="contact-link">Contact Us →</a>
   </div>
 
   <div class="services-grid">
     <div class="service-card">
-      <img src="groceries-icon.svg" alt="Groceries">
+      <img src="<?php echo get_template_directory_uri(); ?>/assets/images/grocery.png" class="grocery" alt="Groceries">
       <h3>Groceries</h3>
       <p>High-quality daily essentials for all your culinary needs.</p>
     </div>
     <div class="service-card">
-      <img src="seafood-icon.svg" alt="Seafood">
+      <img src="<?php echo get_template_directory_uri(); ?>/assets/images/seafood.png" alt="Seafood">
       <h3>Seafood Supply</h3>
       <p>Fresh and frozen seafood delivered with guaranteed quality.</p>
     </div>
     <div class="service-card">
-      <img src="frozen-icon.svg" alt="Frozen">
+      <img src="<?php echo get_template_directory_uri(); ?>/assets/images/frozen-items.png" alt="Frozen">
       <h3>Frozen Items</h3>
       <p>Wide variety of frozen vegetables, meat, and ready-to-cook meals.</p>
     </div>
     <div class="service-card">
-      <img src="banquet-icon.svg" alt="Banquets">
+      <img src="/assets/images/frozen-items.png" alt="Banquets">
       <h3>Banquet Supply</h3>
       <p>Bulk supply solutions tailored for large events and banquet kitchens.</p>
     </div>
