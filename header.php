@@ -34,10 +34,11 @@
       </a>
     </div>
       <div class="navbar-links" id="navbar-links">
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Services</a>
-        <a href="#">Contact</a>
+        <a href="#home">Home</a>
+        <a href="#aboutus">About</a>
+        <a href="#highlighted-items">Highlighted Items</a>
+        <a href="#ourservice">Our Services</a>
+        <a href="#footer">Contact</a>
       </div>
       <div class="mobile-menu-button" id="mobile-menu-button">
         <span>&#9776;</span>

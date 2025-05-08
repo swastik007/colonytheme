@@ -1,7 +1,13 @@
 .services-section {
     padding: 4rem 2rem;
-    background-color: #fdfdfd;
+    background-color: #f4f0f078;
     font-family: colonyFont;
+
+    .sub-services-section{
+      width: 90%;
+      margin: 0 auto;
+
+    }
   
     .services-header {
       text-align: center;
@@ -14,21 +20,24 @@
       p {
         font-size: 1.25rem;
         color: #555;
+        margin: 0;
       }
     }
   
     .services-intro {
       text-align: center;
-      margin: 3rem 0;
+      margin: 1rem 0;
       .headline {
         font-size: 1.5rem;
         em {
           font-style: italic;
-          color: #1e88e5;
+          color: #2e7d32;
+          font-weight: bold;
         }
         strong {
-          font-weight: bold;
+          font-style: italic;
           color: #2e7d32;
+          font-weight: bold;
         }
       }
     }

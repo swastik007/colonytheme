@@ -136,7 +136,7 @@ function theme_stylescript() {
 	wp_enqueue_style( 'owl_theme_css', $theme_uri . '/assets/css/owl.theme.default.css' );
 	wp_enqueue_style( 'owlcarousel_css', $theme_uri . '/assets/css/owl.carousel.min.css' );
 	wp_enqueue_style( 'owlcarousel_css', $theme_uri . '/assets/css/aos.css' );
-	wp_enqueue_style( 'colony_css', $theme_uri . '/assets/css/theme.css', array(), '0.9.2' );
+	wp_enqueue_style( 'colony_css', $theme_uri . '/assets/css/theme.css', array(), '0.9.5' );
 	
 	// Deregister default WordPress jQuery
 	wp_deregister_script( 'jquery' );

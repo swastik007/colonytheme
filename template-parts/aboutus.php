@@ -1,14 +1,16 @@
 <!-- About Us -->
-<section class="about-hero text-white py-5">
+<section class="about-hero text-white py-5 " id="aboutus">
   <div class="container">
-    <div class="row">
-      <div class="col-lg-6">
-        <h1 class="display-4 fw-bold mb-3" data-aos="fade-up">About Colony Production & Suppliers</h1>
+    <div class="about-row">
+      <div class="col-lg-6 row-left">
+        <h1 class="display-4 fw-bold mb-3" data-aos="fade-up">About Us</h1>
         <p class="lead" data-aos="fade-up" data-aos-delay="100">
-          Supplying premium groceries, seafood, and frozen items for hospitality industries and communities.
+        Colony Production and Suppliers is a trusted provider of frozen foods, seafood, and grocery essentials for the hospitality industry. We supply cafés, restaurants, banquets, and hotels with high-quality products and reliable delivery services. <br><br>
+
+Our focus is on freshness, consistency, and timely logistics, ensuring your kitchen is always stocked and ready. With a commitment to food safety and personalized service, we help hospitality businesses run smoothly — every day.
         </p>
       </div>
-      <div class="col-lg-6" data-aos="fade-left">
+      <div class="col-lg-6 row-right" data-aos="fade-left">
         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/img6.jpg" class="img-fluid rounded" alt="About Us">
       </div>
     </div>

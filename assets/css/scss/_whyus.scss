@@ -4,10 +4,13 @@
 
 .why-us {
     background-color: $primarylight;
+    font-family: colonyFont;
     .why-box{
       color: #ffffff; 
       background: $primary; 
       padding: 30px;
+      height: 100%;
+      width: 100%;
   
       h3 {
         color: #ffffff;
@@ -19,6 +22,7 @@
   
       p {
         margin-bottom: 30px;
+        font-size: 18px;
       }
   
       .more-btn {

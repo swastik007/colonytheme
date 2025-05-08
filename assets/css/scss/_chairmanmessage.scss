@@ -2,16 +2,16 @@
 .chairman-message {
   padding: 4rem 1.5rem;
   background: #f9f9f9;
-  height: 100vh;
+  height: 700px;
 
   .container {
-    max-width: 1300px;
+    max-width: 1700px;
     margin: 0 auto;
   }
 
   .message-box {
     display: flex;
-    flex-wrap: wrap;
+    // flex-wrap: wrap;
     align-items: center;
     background: #fff;
     border-radius: 20px;
@@ -19,23 +19,20 @@
     overflow: hidden;
     position: relative;
     padding: 2rem;
+    height: 600px;
 
     .message-text {
       flex: 1 1 60%;
       padding-right: 2rem;
 
-      h2 {
-        font-size: 2rem;
-        color: #000;
-
-        span {
-          color: $primary;
-        }
+      img{
+        height: 100px;
+        // margin-top: 10px;
       }
 
       p {
-        font-size: 1.1rem;
-        margin: 1.5rem 0;
+        font-size: 1.5rem;
+        margin: 5rem 0;
         color: #444;
         line-height: 1.6;
       }
@@ -54,12 +51,14 @@
     }
 
     .message-image {
-      flex: 1 1 40%;
+      flex:  1 40%;
       text-align: center;
 
       img {
-        width: 450px;
-        height: auto;
+        // width: 450px;
+        // height: auto;
+        height: 450px;
+        width: auto;
         border-radius: 12px;
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
         // transform: rotate(-2deg);

@@ -1,44 +1,54 @@
-<section class="testimonial-section py-5">
+<section class="home-testimonial">
   <div class="container">
-    <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <div class="carousel-caption">
-            <p>
-              “If Colony’s delivery system can’t convince you of professional service, nothing will.
-              Exceptional cold-chain logistics and attention to quality.”
-            </p>
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/img5.jpg" alt="Client 1">
-            <!-- <div id="image-caption">Nick Doe</div> -->
+    <div class="text-center mb-5 icon-heading">
+      <span>Testimonials/Review</span>
+      <h3 class="title-heading">Explore the Customer's Experience</h3>
+    </div>
+
+    <div class="testimonial-grid">
+      <?php
+        $testimonials = [
+          [
+            "name" => "Rishikesh Shrestha",
+            "location" => "Kathmandu, Nepal",
+            "image" => "img1.jpg",
+            "text" => "Colony Production and Suppliers always delivers fresh seafood and frozen items on time. Their consistency helps our kitchen run smoothly every day.."
+          ],
+          [
+            "name" => "Suraj Giri",
+            "location" => "Chitwan, Nepal",
+            "image" => "img2.jpg",
+            "text" => "As a banquet hall manager, I rely on Colony for reliable deliveries. Their team understands the urgency of the hospitality industry."
+          ],
+          [
+            "name" => "Yorjung Karki",
+            "location" => "Pokhara, Nepal",
+            "image" => "img3.jpg",
+            "text" => "We've been ordering groceries and frozen supplies from Colony for over a year. The quality and service are top-notch."
+          ],
+          [
+            "name" => "Sajeet Bajracharya",
+            "location" => "Bandipur, Nepal",
+            "image" => "img4.jpg",
+            "text" => "Their frozen items are always high-quality and fresh. We never worry about delays or stock issues anymore."
+          ]
+        ];
+
+        foreach ($testimonials as $t) {
+          ?>
+          <div class="testimonial-card">
+            <div class="testimonial-header">
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/images/<?php echo $t['image']; ?>" alt="<?php echo $t['name']; ?>" class="testimonial-img" />
+              <div>
+                <h4 class="testimonial-name"><?php echo $t['name']; ?></h4>
+                <!-- <p class="testimonial-location"><?php echo $t['location']; ?></p> -->
+              </div>
+            </div>
+            <p class="testimonial-text">“<?php echo $t['text']; ?>”</p>
           </div>
-        </div>
-        <div class="carousel-item">
-          <div class="carousel-caption">
-            <p>
-              “Colony Suppliers are our go-to for reliable bulk deliveries. Their seafood is always fresh
-              and frozen goods meet all hygiene standards.”
-            </p>
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/img7.jpg" alt="Client 2">
-            <div id="image-caption">Crompton Greves</div>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div class="carousel-caption">
-            <p>
-              “As a hotel manager, I can say Colony has elevated our food supply process.
-              Excellent communication and premium inventory.”
-            </p>
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/img2.jpg" alt="Client 3">
-            <div id="image-caption">Harry Mon</div>
-          </div>
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
-        <span class="carousel-icon"><i class="fas fa-arrow-left"></i></span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
-        <span class="carousel-icon"><i class="fas fa-arrow-right"></i></span>
-      </button>
+          <?php
+        }
+      ?>
     </div>
   </div>
 </section>
