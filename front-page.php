@@ -37,9 +37,6 @@
   
   <?php get_template_part( 'template-parts/ourservice', 'none' ); ?>
   
-
-  <?php
- 
 <!-- aboutus section area -->
     <?php get_template_part( 'template-parts/aboutus', 'none' ); ?>
 <!-- aboutus section area -->
