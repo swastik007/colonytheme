@@ -19,6 +19,9 @@
     <?php get_template_part( 'template-parts/homeslider', 'none' ); ?>
 <!-- banner section area -->
  
+<!-- Chairman's message section area -->
+    <?php get_template_part( 'template-parts/chairman-message', 'none' ); ?>
+<!-- Chairman's message section area -->
  <!-- banner section area -->
  <?php get_template_part( 'template-parts/banner-area', 'none' ); ?>
  <!-- banner section area -->
@@ -34,7 +37,6 @@
   
   <?php get_template_part( 'template-parts/ourservice', 'none' ); ?>
   
- 
 <!-- aboutus section area -->
     <?php get_template_part( 'template-parts/aboutus', 'none' ); ?>
 <!-- aboutus section area -->
