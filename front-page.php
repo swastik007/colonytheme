@@ -15,11 +15,9 @@
  get_header();
  ?>
  
- <!-- banner section area -->
- <?php get_template_part( 'template-parts/homeslider', 'none' ); ?>
- <!-- banner section area -->
- <?php get_template_part( 'template-parts/highlight', 'none' ); ?>
- <?php get_template_part( 'template-parts/whyus', 'none' ); ?>
+<!-- banner section area -->
+    <?php get_template_part( 'template-parts/homeslider', 'none' ); ?>
+<!-- banner section area -->
  
  <!-- banner section area -->
  <?php get_template_part( 'template-parts/banner-area', 'none' ); ?>
@@ -36,8 +34,34 @@
   
   <?php get_template_part( 'template-parts/ourservice', 'none' ); ?>
   
-
-  <?php
  
- get_footer();
+<!-- aboutus section area -->
+    <?php get_template_part( 'template-parts/aboutus', 'none' ); ?>
+<!-- aboutus section area -->
+
+<!-- why us section area -->
+    <?php get_template_part( 'template-parts/whyus', 'none' ); ?>
+<!-- why us section area -->
+ 
+<!-- banner section area -->
+    <?php get_template_part( 'template-parts/banner-area', 'none' ); ?>
+<!-- banner section area -->
+
+<!-- highlight section area -->
+    <?php get_template_part( 'template-parts/highlight', 'none' ); ?>
+<!-- highlight section area -->
+
+<!-- aboutus section area -->
+    <?php get_template_part( 'template-parts/about-team', 'none' ); ?>
+<!-- aboutus section area -->
+  
+<!-- our service section area -->
+    <?php get_template_part( 'template-parts/ourservice', 'none' ); ?>
+<!-- our service section area -->
+
+<!-- testimonials section area -->
+<?php get_template_part( 'template-parts/testimonials', 'none' ); ?>
+<!-- testimonials section area -->
+
+<?php get_footer(); ?>
  

@@ -3,7 +3,10 @@ $secondary: #6e0000;
 $primarylight: #e8dcc2;
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: colonyFont;
+}

@@ -1,89 +1,135 @@
+.about-hero {
+  background-color: #c3c3c3;
+  padding: 100px 0;
 
-.about-us-section {
-  background-color: #5d3c2d; // Warm brown like your reference image
-  color: #fff;
-  padding: 4rem 2rem;
-  font-family: sans-serif;
+  h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    color: $primary;
+    // animation: fadeInDown 1s ease both;
+  }
 
-  .about-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    gap: 2rem;
+  p {
+    font-size: 1.25rem;
+    color: #000;
+    // animation: fadeInUp 0.5s ease 0.5s both;
+  }
 
-    .about-image {
-      position: relative;
-      flex: 1 1 40%;
-      min-width: 300px;
+  img {
+    border: 2px solid $primarylight;
+    border-radius: 20px;
+    min-width: 500px;
+    max-height: 400px;
+    animation: zoomIn 1s ease 0.5s both;
+  }
+}
 
-      img {
-        width: 100%;
-        border-top-right-radius: 200px;
-        display: block;
-        height: 40em;
-      }
+.about-values {
+  background-color: $primary;
+  color: #000;
+  text-align: center;
+  padding: 80px 0;
 
-      // .curve-overlay {
-      //   position: absolute;
-      //   top: 0;
-      //   right: 0;
-      //   width: 100px;
-      //   height: 100px;
-      //   background-color: $primary;
-      //   border-bottom-left-radius: 100%;
-      //   z-index: 2;
-      // }
+  h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+  }
+
+  i {
+    color: #fff;
+  }
+
+  h5 {
+    font-size: 1.5rem;
+    margin-top: 15px;
+    font-weight: 600;
+  }
+
+  p {
+    font-size: 1.25rem;
+    font-weight: 400;
+  }
+}
+
+.about-team {
+  background-color: $secondary;
+  color: white;
+  text-align: center;
+  padding: 80px 0;
+
+  h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+  }
+
+  p {
+    font-size: 1.25rem;
+  }
+
+  .team-card {
+    background-color: $primarylight;
+    color: #000;
+    transition: transform 0.3s ease, box-shadow 0.3s;
+    border-radius: 10px;
+    padding: 30px;
+
+    &:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
     }
 
-    .about-content {
-      flex: 1 1 50%;
-      min-width: 300px;
+    img {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 3px solid $primary;
+    }
 
-      h2 {
-        font-size: 2.5rem;
-        font-weight: 700;
-        margin-bottom: 0.5rem;
+    h5 {
+      margin-top: 15px;
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: $secondary;
+    }
 
-        span {
-          color: $primary;
-        }
-      }
-
-      h4 {
-        font-size: 1.2rem;
-        font-weight: 500;
-        margin-bottom: 1rem;
-      }
-
-      p {
-        font-size: 1rem;
-        line-height: 1.6;
-        color: #e0dcd7;
-      }
+    p {
+      color: #222;
+      font-size: 1.25rem;
     }
   }
 }
 
-// Responsive
-@media (max-width: 768px) {
-  .about-us-section {
-    .about-container {
-      flex-direction: column;
+// Animations
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
-      .about-image,
-      .about-content {
-        flex: 1 1 100%;
-      }
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
-      .about-image {
-        .curve-overlay {
-          width: 60px;
-          height: 60px;
-        }
-      }
-    }
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
   }
 }
