@@ -3,16 +3,17 @@
   padding: 4rem 2rem;
   background-color: #fff;
 
-  .container {
-    max-width: 1300px;
-    margin: 0 auto;
-    text-align: center;
+  // .container {
+  //   max-width: 1300px;
+  //   margin: 0 auto;
+  //   text-align: center;
 
     .section-title {
       font-size: 2.5rem;
       font-weight: 700;
       color: $primary;
       margin-bottom: 3rem;
+      text-align: center;
     }
 
     .items-grid {
@@ -55,7 +56,7 @@
         }
       }
     }
-  }
+  // }
 }
 
 // Responsive tweaks

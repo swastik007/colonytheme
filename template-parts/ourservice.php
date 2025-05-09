@@ -1,5 +1,5 @@
 <section class="services-section" id="ourservice">
-  <div class="sub-services-section">
+  <div class="container sub-services-section">
   <div class="services-header">
     <h2>Our Services</h2>
     <p>Supplying premium groceries, seafood, and frozen items to banquets and restaurants.</p>

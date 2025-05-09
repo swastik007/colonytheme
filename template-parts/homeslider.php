@@ -23,8 +23,8 @@
   ];
 
   foreach ($slides as $slide): ?>
-    <div class="slide">
-      <div class="box d-flex flex-column flex-md-row align-items-center justify-content-between">
+    <div class="slide container">
+      <div class=" box d-flex flex-column flex-md-row align-items-center justify-content-between">
         <div class="slide-text">
           <h1><?= $slide['title'] ?></h1>
           <p><?= $slide['desc'] ?></p>

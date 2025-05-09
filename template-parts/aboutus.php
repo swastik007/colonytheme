@@ -17,7 +17,7 @@ Our focus is on freshness, consistency, and timely logistics, ensuring your kitc
   </div>
 </section>
 
-<section class="about-values py-5">
+<section class="about-values py-5 ">
   <div class="container">
     <div class="text-center mb-5">
       <h2 class="fw-bold">What Drives Us</h2>

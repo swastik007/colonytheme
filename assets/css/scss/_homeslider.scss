@@ -3,7 +3,7 @@
     height: 70vh;
     display: flex;
     align-items: center;
-    background: linear-gradient(135deg, #e3e5e7, #ffffff);
+    // background: linear-gradient(135deg, #e3e5e7, #ffffff);
     overflow: hidden;
     // font-family: colonyFont;
 
@@ -27,7 +27,7 @@
       padding-left: 2rem;
 
       h1 {
-        font-size: 3.5rem;
+        font-size: 2.5rem;
         font-weight: 700;
         color: #222;
         margin-bottom: 1rem;
@@ -55,7 +55,7 @@
         width: 100%;
         max-height: 90vh;
         object-fit: contain;
-        border-radius: 20px;
+        border-radius: 10px;
         box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
       }
 
@@ -70,6 +70,7 @@
     bottom: 20px;
     width: 100%;
     text-align: center;
+    display: none;
 
     .owl-dot span {
       background: #ccc;
