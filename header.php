@@ -40,23 +40,32 @@
         <a href="#ourservice">Our Services</a>
         <a href="#footer">Contact</a>
       </div>
-      <div class="mobile-menu-button" id="mobile-menu-button">
+      <div class="mobile-menu-button" id="mobile-menu-button" aria-label="Toggle navigation">
         <span>&#9776;</span>
       </div>
     </div>
     <div class="mobile-menu" id="mobile-menu">
-      <a href="#">Home</a>
-      <a href="#">About</a>
-      <a href="#">Services</a>
-      <a href="#">Contact</a>
+    <a href="#home">Home</a>
+        <a href="#aboutus">About</a>
+        <a href="#highlighted-items">Highlighted Items</a>
+        <a href="#ourservice">Our Services</a>
+        <a href="#footer">Contact</a>
     </div>
   </nav>
 
   <script>
-    const mobileMenuBtn = document.getElementById("mobile-menu-button");
-    const mobileMenu = document.getElementById("mobile-menu");
+  const mobileMenuBtn = document.getElementById("mobile-menu-button");
+  const mobileMenu = document.getElementById("mobile-menu");
+  const menuLinks = mobileMenu.querySelectorAll("a");
 
-    mobileMenuBtn.addEventListener("click", () => {
-      mobileMenu.classList.toggle("show");
+  mobileMenuBtn.addEventListener("click", () => {
+    mobileMenu.classList.toggle("show");
+  });
+
+  // Close menu when a link is clicked
+  menuLinks.forEach(link => {
+    link.addEventListener("click", () => {
+      mobileMenu.classList.remove("show");
     });
-  </script>
+  });
+</script>

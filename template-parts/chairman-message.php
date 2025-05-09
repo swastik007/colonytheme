@@ -2,7 +2,7 @@
   <div class="container">
     <div class="message-box">
       <div class="message-image">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/img2.jpg" alt="Chairman Image">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/person1.jpg" alt="Chairman Image">
       </div>
       <div class="message-text">
         <!-- <h2><span>CHAIRMAN'S</span> MESSAGE</h2> -->

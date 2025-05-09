@@ -1,10 +1,12 @@
 .custom-slider {
+  padding-top: 80px;
+
   .slide {
     height: 70vh;
     display: flex;
     align-items: center;
     // background: linear-gradient(135deg, #e3e5e7, #ffffff);
-    overflow: hidden;
+    overflow: visible;
     // font-family: colonyFont;
 
     .box {
@@ -54,7 +56,7 @@
       img {
         width: 100%;
         max-height: 90vh;
-        object-fit: contain;
+        // object-fit: contain;
         border-radius: 10px;
         box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
       }

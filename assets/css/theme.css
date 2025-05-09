@@ -80,13 +80,16 @@ body {
 .navbar {
   background-color: white;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  position: relative;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
 }
 .navbar .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 1rem;
-  height: 120px;
+  height: 80px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -100,34 +103,37 @@ body {
 }
 .navbar .container .navbar-links a {
   color: #e79a2e;
-  font-size: 24px;
+  font-size: 18px;
   font-weight: 600;
   text-decoration: none;
   transition: color 0.3s ease;
 }
 .navbar .container .navbar-links a:hover {
   color: #6e0000;
-  text-decoration: underline;
 }
 .navbar .container .mobile-menu-button {
   display: none;
-  font-size: 20px;
+  font-size: 28px;
   cursor: pointer;
   color: #e79a2e;
 }
 .navbar .mobile-menu {
   display: none;
   flex-direction: column;
-  padding: 0.5rem 1rem;
+  padding: 1rem;
   background-color: #e8dcc2;
+  position: absolute;
+  top: 80px;
+  left: 0;
+  width: 100%;
 }
-.navbar .mobile-menu tr a {
-  padding: 0.5rem 0;
+.navbar .mobile-menu a {
+  padding: 0.75rem 1rem;
   color: #e79a2e;
-  font-size: 24px;
+  font-size: 18px;
   text-decoration: none;
 }
-.navbar .mobile-menu tr a:hover {
+.navbar .mobile-menu a:hover {
   color: #6e0000;
 }
 .navbar .mobile-menu.show {
@@ -195,11 +201,14 @@ body {
   font-size: 13px;
 }
 
+.custom-slider {
+  padding-top: 80px;
+}
 .custom-slider .slide {
   height: 70vh;
   display: flex;
   align-items: center;
-  overflow: hidden;
+  overflow: visible;
 }
 .custom-slider .slide .box {
   max-width: 1500px;
@@ -245,8 +254,6 @@ body {
 .custom-slider .slide .slide-image img {
   width: 100%;
   max-height: 90vh;
-  -o-object-fit: contain;
-     object-fit: contain;
   border-radius: 10px;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
 }
@@ -364,6 +371,8 @@ body {
      object-fit: cover;
   border-radius: 50%;
   border: 3px solid #e79a2e;
+  display: flex;
+  justify-content: center;
 }
 .about-team .team-card h5 {
   margin-top: 15px;
@@ -587,8 +596,8 @@ body {
   text-align: center;
 }
 .chairman-message .message-box .message-image img {
-  height: 450px;
-  width: auto;
+  height: 550px;
+  width: 100%;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
