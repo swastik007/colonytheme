@@ -1,7 +1,7 @@
 .services-section {
     padding: 4rem 2rem;
-    background-color: #f4f0f078;
-    font-family: colonyFont;
+    background-color: rgb(253, 253, 253);
+   
 
     .sub-services-section{
       width: 90%;
@@ -31,12 +31,12 @@
         font-size: 1.5rem;
         em {
           font-style: italic;
-          color: #2e7d32;
+          color: $primary;
           font-weight: bold;
         }
         strong {
           font-style: italic;
-          color: #2e7d32;
+          color: $primary;
           font-weight: bold;
         }
       }
@@ -76,7 +76,7 @@
         }
   
         p {
-          font-size: 1.25rem;
+          font-size: 1rem;
           color: #666;
           font-weight: 400;
         }

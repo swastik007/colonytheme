@@ -127,16 +127,14 @@ function theme_stylescript() {
 	// Enqueue Tailwind-compiled stylesheet
 	
 	wp_enqueue_style( 'bootstrap', $theme_uri . '/assets/css/bootstrap.min.css' );
-	wp_enqueue_style('bootstrap-css', 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css');
-
-	wp_enqueue_script('bootstrap-js', 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js', array(), null, true);
-
-	wp_enqueue_style( 'bootstrap_icons', 'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css' );
+		wp_enqueue_style( 'bootstrap_icons', 'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css' );
 	//owlcarousel
 	wp_enqueue_style( 'owl_theme_css', $theme_uri . '/assets/css/owl.theme.default.css' );
 	wp_enqueue_style( 'owlcarousel_css', $theme_uri . '/assets/css/owl.carousel.min.css' );
 	wp_enqueue_style( 'owlcarousel_css', $theme_uri . '/assets/css/aos.css' );
-	wp_enqueue_style( 'colony_css', $theme_uri . '/assets/css/theme.css', array(), '0.9.5' );
+
+	wp_enqueue_style( 'owlcarousel_css', $theme_uri . '/assets/css/animate.min.css' );
+		wp_enqueue_style( 'colony_css', $theme_uri . '/assets/css/theme.css', array(), '0.10.9' );
 	
 	// Deregister default WordPress jQuery
 	wp_deregister_script( 'jquery' );
@@ -149,9 +147,6 @@ function theme_stylescript() {
 	wp_enqueue_script( 'bootstrap_js', $theme_uri . '/assets/js/bootstrap.min.js', array('jquery'), null, true );
 	wp_enqueue_script( 'owlcarousel', $theme_uri . '/assets/js/owl.carousel.min.js', array('jquery'), null, true );
 	wp_enqueue_script( 'theme_js', $theme_uri . '/assets/js/theme.js', array( 'jquery' ), '1.0.0', true );
-	// Optional: Tailwind browser utilities (CDN-based)
-	wp_enqueue_script( 'tailwind_browser', 'https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4', array(), null, true );
-
-
+	
 }
 add_action( 'wp_enqueue_scripts', 'theme_stylescript' );

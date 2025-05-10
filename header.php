@@ -24,39 +24,26 @@
 <?php wp_body_open(); ?>
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'colony_suppliers' ); ?></a>
+  
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
- <!-- Navbar -->
- <nav class="navbar">
-    <div class="container">
-      <div class="navbar-logo">
-      <a href="<?php echo esc_url(home_url('/')); ?>">
-        <img class="logo-default" src="<?php echo get_template_directory_uri(); ?>/assets/images/colony-logo1.png" alt="colony Logo">
+      <a href="index.html" class="logo d-flex align-items-center">
+        
+        <img class="logo-default" src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-colony.png" alt="colony Logo">
+        
       </a>
-    </div>
-      <div class="navbar-links" id="navbar-links">
-        <a href="#home">Home</a>
-        <a href="#aboutus">About</a>
-        <a href="#highlighted-items">Highlighted Items</a>
-        <a href="#ourservice">Our Services</a>
-        <a href="#footer">Contact</a>
-      </div>
-      <div class="mobile-menu-button" id="mobile-menu-button">
-        <span>&#9776;</span>
-      </div>
-    </div>
-    <div class="mobile-menu" id="mobile-menu">
-      <a href="#">Home</a>
-      <a href="#">About</a>
-      <a href="#">Services</a>
-      <a href="#">Contact</a>
-    </div>
-  </nav>
 
-  <script>
-    const mobileMenuBtn = document.getElementById("mobile-menu-button");
-    const mobileMenu = document.getElementById("mobile-menu");
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#aboutus">About</a></li>
+          <li><a href="#highlighted-items">Highlighted Items</a></li>
+          <li><a href="#ourservice">Our Services</a></li>
+          <li><a href="#footer">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
 
-    mobileMenuBtn.addEventListener("click", () => {
-      mobileMenu.classList.toggle("show");
-    });
-  </script>
+    </div>
+  </header>
