@@ -51,69 +51,90 @@
           <a href="assets/img/product/product-item-1.png" class="glightbox">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/products/peas.png" alt="Spices">
             </a>
-          <h4>Magnam Tiste</h4>
-          <p class="ingredients">
-            Lorem, deren, trataro, filede, nerada
-          </p>
-          <p class="price">
-            $5.95
-          </p>
+            <div class="product-info">
+                <h4>Magnam Tiste Peas</h4>
+                <p>
+                    Frozen Salted peas
+                </p>
+            </div>
+         
+          
         </div><!-- product Item -->
 
         <div class="col-lg-4 product-item">
-          <a href="assets/img/product/product-item-2.png" class="glightbox"><img src="assets/img/product/product-item-2.png" class="product-img img-fluid" alt=""></a>
-          <h4>Aut Luia</h4>
-          <p class="ingredients">
-            Lorem, deren, trataro, filede, nerada
-          </p>
-          <p class="price">
-            $14.95
-          </p>
+          <a href="assets/img/product/product-item-1.png" class="glightbox">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/products/peanut-butter.jpg" alt="Spices">
+            </a>
+            <div class="product-info">
+                <h4> Peanut Butter</h4>
+                <p>
+                    <italic>American Garderner</italic>
+                </p>
+            </div>
+         
+          
+        </div><!-- product Item -->
+
+
+        <div class="col-lg-4 product-item">
+          <a href="assets/img/product/product-item-1.png" class="glightbox">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/products/peanut-butter.jpg" alt="Spices">
+            </a>
+            <div class="product-info">
+                <h4>Rahat Lokum</h4>
+                <p>Turkish Delicacy
+                    
+                </p>
+                <p class="fst-italic">Imported from Turkey</p>
+            </div>
+         
+          
         </div><!-- product Item -->
 
         <div class="col-lg-4 product-item">
-          <a href="assets/img/product/product-item-3.png" class="glightbox"><img src="assets/img/product/product-item-3.png" class="product-img img-fluid" alt=""></a>
-          <h4>Est Eligendi</h4>
-          <p class="ingredients">
-            Lorem, deren, trataro, filede, nerada
-          </p>
-          <p class="price">
-            $8.95
-          </p>
+          <a href="assets/img/product/product-item-1.png" class="glightbox">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/products/peas.png" alt="Spices">
+            </a>
+            <div class="product-info">
+                <h4>Magnam Tiste Peas</h4>
+                <p>
+                    Frozen Salted peas
+                </p>
+            </div>
+         
+          
         </div><!-- product Item -->
 
         <div class="col-lg-4 product-item">
-          <a href="assets/img/product/product-item-4.png" class="glightbox"><img src="assets/img/product/product-item-4.png" class="product-img img-fluid" alt=""></a>
-          <h4>Eos Luibusdam</h4>
-          <p class="ingredients">
-            Lorem, deren, trataro, filede, nerada
-          </p>
-          <p class="price">
-            $12.95
-          </p>
+          <a href="assets/img/product/product-item-1.png" class="glightbox">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/products/peanut-butter.jpg" alt="Spices">
+            </a>
+            <div class="product-info">
+                <h4> Peanut Butter</h4>
+                <p>
+                    <italic>American Garderner</italic>
+                </p>
+            </div>
+         
+          
         </div><!-- product Item -->
 
-        <div class="col-lg-4 product-item">
-          <a href="assets/img/product/product-item-5.png" class="glightbox"><img src="assets/img/product/product-item-5.png" class="product-img img-fluid" alt=""></a>
-          <h4>Eos Luibusdam</h4>
-          <p class="ingredients">
-            Lorem, deren, trataro, filede, nerada
-          </p>
-          <p class="price">
-            $12.95
-          </p>
-        </div><!-- product Item -->
 
         <div class="col-lg-4 product-item">
-          <a href="assets/img/product/product-item-6.png" class="glightbox"><img src="assets/img/product/product-item-6.png" class="product-img img-fluid" alt=""></a>
-          <h4>Laboriosam Direva</h4>
-          <p class="ingredients">
-            Lorem, deren, trataro, filede, nerada
-          </p>
-          <p class="price">
-            $9.95
-          </p>
+          <a href="assets/img/product/product-item-1.png" class="glightbox">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/products/peanut-butter.jpg" alt="Spices">
+            </a>
+            <div class="product-info">
+                <h4>Rahat Lokum</h4>
+                <p>Turkish Delicacy
+                    
+                </p>
+                <p class="fst-italic">Imported from Turkey</p>
+            </div>
+         
+          
         </div><!-- product Item -->
+
 
       </div>
     </div><!-- End Starter product Content -->

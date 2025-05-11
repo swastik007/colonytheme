@@ -31,17 +31,10 @@
 <!-- Products section area -->
 <?php get_template_part( 'template-parts/products-section', 'none' ); ?>
 <!-- Products section area -->
-
-
-  
-
-  <?php get_template_part( 'template-parts/highlight', 'none' ); ?>
-  
-
-
 <!-- why us section area -->
-    <?php get_template_part( 'template-parts/whyus', 'none' ); ?>
+<?php get_template_part( 'template-parts/whyus', 'none' ); ?>
 <!-- why us section area -->
+
  
 
 <!-- aboutus section area -->

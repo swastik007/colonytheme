@@ -597,6 +597,38 @@ h1, h2, h3, h4, h5 {
   letter-spacing: 2px;
 }
 
+.product {
+  margin-bottom: 5em;
+}
+
+.product-item {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+}
+.product-item a {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: contain;
+  border: 2px solid #f2f2f2;
+  padding: 10px;
+}
+.product-item a:hover, .product-item a:focus {
+  border: 2px solid #e79a2e;
+}
+.product-item .product-info h4 {
+  font-size: 20px;
+  letter-spacing: 1px;
+  margin-bottom: 0;
+}
+.product-item .product-info p {
+  font-size: 14px;
+  letter-spacing: 1px;
+  margin-bottom: 0;
+}
+
 .highlight-items-v2 {
   padding: 4rem 2rem;
   background-color: #fff;
