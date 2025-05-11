@@ -310,7 +310,7 @@ h1, h2, h3, h4, h5 {
 # Global Footer
 --------------------------------------------------------------*/
 .footer-about {
-  background-color: #fff8e9;
+  background-color: #fffcf8;
   padding: 5em 0;
 }
 .footer-about .svgicon {
@@ -319,7 +319,7 @@ h1, h2, h3, h4, h5 {
 
 .footer {
   color: #111;
-  background-color: #ffeabd;
+  background-color: #ffedcb;
   font-size: 16px;
   padding: 60px 0;
   position: relative;
