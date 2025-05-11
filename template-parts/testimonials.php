@@ -1,54 +1,114 @@
-<section class="home-testimonial">
-  <div class="container">
-    <div class="text-center mb-5 icon-heading">
-      <span>Testimonials/Review</span>
-      <h3 class="title-heading">Explore the Customer's Experience</h3>
-    </div>
+<!-- Testimonials Section -->
+<section id="testimonials" class="testimonials-section">
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>TESTIMONIALS</h2>
+    <p>What Are They <span class="description-title">Saying About Us</span></p>
+  </div>
 
-    <div class="testimonial-grid">
-      <?php
-        $testimonials = [
-          [
-            "name" => "Rishikesh Shrestha",
-            "location" => "Kathmandu, Nepal",
-            "image" => "img1.jpg",
-            "text" => "Colony Production and Suppliers always delivers fresh seafood and frozen items on time. Their consistency helps our kitchen run smoothly every day.."
-          ],
-          [
-            "name" => "Suraj Giri",
-            "location" => "Chitwan, Nepal",
-            "image" => "img2.jpg",
-            "text" => "As a banquet hall manager, I rely on Colony for reliable deliveries. Their team understands the urgency of the hospitality industry."
-          ],
-          [
-            "name" => "Yorjung Karki",
-            "location" => "Pokhara, Nepal",
-            "image" => "img3.jpg",
-            "text" => "We've been ordering groceries and frozen supplies from Colony for over a year. The quality and service are top-notch."
-          ],
-          [
-            "name" => "Sajeet Bajracharya",
-            "location" => "Bandipur, Nepal",
-            "image" => "img4.jpg",
-            "text" => "Their frozen items are always high-quality and fresh. We never worry about delays or stock issues anymore."
-          ]
-        ];
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+    <div class="owl-carousel testimonials-carousel">
 
-        foreach ($testimonials as $t) {
-          ?>
-          <div class="testimonial-card">
-            <div class="testimonial-header">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/images/<?php echo $t['image']; ?>" alt="<?php echo $t['name']; ?>" class="testimonial-img" />
-              <div>
-                <h4 class="testimonial-name"><?php echo $t['name']; ?></h4>
-                <!-- <p class="testimonial-location"><?php echo $t['location']; ?></p> -->
+      <!-- Testimonial Item 1 -->
+      <div class="testimonial-item">
+        <div class="row gy-4 justify-content-center align-items-center">
+          <div class="col-lg-6 offset-lg-2">
+            <div class="testimonial-content">
+              <p>
+                <i class="bi bi-quote quote-icon-left"></i>
+                <span>Colony Production and Suppliers always delivers fresh seafood and frozen items on time. Their consistency helps our kitchen run smoothly every day..</span>
+                <i class="bi bi-quote quote-icon-right"></i>
+              </p>
+              <h3>Rishikesh Shrestha</h3>
+              <h4>Kathmandu, Nepal</h4>
+              <div class="stars">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
               </div>
             </div>
-            <p class="testimonial-text">“<?php echo $t['text']; ?>”</p>
           </div>
-          <?php
-        }
-      ?>
+          <div class="col-lg-4 text-center">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/team/user7.jpeg" class="img-fluid testimonial-img" alt="Rishikesh Shrestha">
+            
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimonial Item 2 -->
+      <div class="testimonial-item">
+        <div class="row gy-4 justify-content-center align-items-center">
+          <div class="col-lg-6 offset-lg-2">
+            <div class="testimonial-content">
+              <p>
+                <i class="bi bi-quote quote-icon-left"></i>
+                <span>As a banquet hall manager, I rely on Colony for reliable deliveries. Their team understands the urgency of the hospitality industry.</span>
+                <i class="bi bi-quote quote-icon-right"></i>
+              </p>
+              <h3>Suraj Giri</h3>
+              <h4>Chitwan, Nepal</h4>
+              <div class="stars">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 text-center">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/team/user2.jpeg" class="img-fluid testimonial-img" alt="Rishikesh Shrestha">
+            
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimonial Item 3 -->
+      <div class="testimonial-item">
+        <div class="row gy-4 justify-content-center align-items-center">
+          <div class="col-lg-6 offset-lg-2">
+            <div class="testimonial-content">
+              <p>
+                <i class="bi bi-quote quote-icon-left"></i>
+                <span>We've been ordering groceries and frozen supplies from Colony for over a year. The quality and service are top-notch.</span>
+                <i class="bi bi-quote quote-icon-right"></i>
+              </p>
+              <h3>Yorjung Karki</h3>
+              <h4>Pokhara, Nepal</h4>
+              <div class="stars">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 text-center">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/team/user6.jpeg" class="img-fluid testimonial-img" alt="Rishikesh Shrestha">
+            
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimonial Item 4 -->
+      <div class="testimonial-item">
+        <div class="row gy-4 justify-content-center align-items-center">
+          <div class="col-lg-6">
+            <div class="testimonial-content">
+              <p>
+                <i class="bi bi-quote quote-icon-left"></i>
+                <span>Their frozen items are always high-quality and fresh. We never worry about delays or stock issues anymore.</span>
+                <i class="bi bi-quote quote-icon-right"></i>
+              </p>
+              <h3>Sajeet Bajracharya</h3>
+              <h4>Bandipur, Nepal</h4>
+              <div class="stars">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 text-center">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/team/user5.jpeg" class="img-fluid testimonial-img" alt="Rishikesh Shrestha">
+            
+          </div>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>

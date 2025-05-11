@@ -3,17 +3,17 @@
 --------------------------------------------------------------*/
 
 .why-us {
-    background-color: $primarylight;
+    background-color: #fffef6;
    
     .why-box{
       color: #ffffff; 
-      background: $primary; 
+      background: rgb(235, 234, 223); 
       padding: 30px;
       height: 100%;
       width: 100%;
   
       h3 {
-        color: #ffffff;
+        color: $primary;
         
         font-weight: 700;
         font-size: 34px;
@@ -23,6 +23,7 @@
       p {
         margin-bottom: 30px;
         font-size: 18px;
+        color: #111;
       }
   
       .more-btn {
