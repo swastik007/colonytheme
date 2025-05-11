@@ -2,60 +2,80 @@
 /**
  * The header for our theme
  *
- * This is the template that displays all of the <head> section and everything up until <div id="content">
- *
- * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
- *
  * @package Colony_Suppliers
  */
-
 ?>
-<!doctype html>
+<!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
-	<meta charset="<?php bloginfo( 'charset' ); ?>">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="profile" href="https://gmpg.org/xfn/11">
-
-	<?php wp_head(); ?>
+  <meta charset="<?php bloginfo('charset'); ?>">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <?php wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
 <div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'colony_suppliers' ); ?></a>
-  
-  <header id="header" class="header d-flex align-items-center sticky-top">
-    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+  <a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'colony_suppliers' ); ?></a>
 
-      <a href="index.html" class="logo d-flex align-items-center">
-        
-        <img class="logo-default" src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-colony.png" alt="colony Logo">
-        
+  <header id="header" class="header">
+    <div class="container-fluid d-flex align-items-center justify-content-between ">
+
+      <!-- Logo -->
+      <a href="<?php echo esc_url(home_url('/')); ?>" class="logo d-flex align-items-center">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-colony.png" alt="colony Logo">
       </a>
 
-      <nav id="navmenu" class="navmenu">
+      <!-- Nav Menu -->
+      <nav id="navmenu" class="navmenu d-none d-xl-block">
         <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#aboutus">About</a></li>
-          <li><a href="#highlighted-items">Highlighted Items</a></li>
-          <li><a href="#ourservice">Our Services</a></li>
-          <li><a href="#footer">Contact</a></li>
+          <li><a class="nav-link" href="#home">Home</a></li>
+          <li><a class="nav-link" href="#aboutus">About</a></li>
+          <li><a class="nav-link" href="#products">Products & Categories</a></li>
+          <li><a class="nav-link" href="#team">Our Team</a></li>
+          <li><a class="nav-link" href="#contact">Contact</a></li>
         </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
+      <!-- Mobile Icons -->
+      <div class="mobile-nav-icons d-xl-none">
+        <i class="mobile-nav-toggle bi bi-list"></i>
+        <i class="mobile-nav-close bi bi-x"></i>
+      </div>
     </div>
-  </header>
-  <script>
-document.addEventListener('DOMContentLoaded', function () {
-  const body = document.querySelector('body');
-  const mobileToggle = document.querySelector('.mobile-nav-toggle');
 
-  if (mobileToggle) {
-    mobileToggle.addEventListener('click', function () {
-      body.classList.toggle('mobile-nav-active');
+    <!-- Mobile Nav -->
+    <nav class="navmenu-mobile d-xl-none">
+      <ul>
+        <li><a class="nav-link" href="#home">Home</a></li>
+        <li><a class="nav-link" href="#aboutus">About</a></li>
+        <li><a class="nav-link" href="#products">Products & Categories</a></li>
+        <li><a class="nav-link" href="#team">Our Team</a></li>
+        <li><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const body = document.body;
+    const navToggle = document.querySelector('.mobile-nav-toggle');
+    const navClose = document.querySelector('.mobile-nav-close');
+    const mobileMenu = document.querySelector('.navmenu-mobile');
+
+    navToggle.addEventListener('click', () => {
+      body.classList.add('mobile-nav-active');
+      mobileMenu.classList.add('show');
     });
-  }
-});
+
+    navClose.addEventListener('click', () => {
+      body.classList.remove('mobile-nav-active');
+      mobileMenu.classList.remove('show');
+    });
+  });
 </script>
+
+</body>
+</html>
