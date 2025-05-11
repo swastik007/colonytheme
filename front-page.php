@@ -31,23 +31,17 @@
 <!-- Products section area -->
 <?php get_template_part( 'template-parts/products-section', 'none' ); ?>
 <!-- Products section area -->
-<!-- why us section area -->
-<?php get_template_part( 'template-parts/whyus', 'none' ); ?>
-<!-- why us section area -->
 
+
+<!-- team section area -->
+<?php get_template_part( 'template-parts/teams-section', 'none' ); ?>
+<!-- team section area -->
  
-
-<!-- aboutus section area -->
-    <?php get_template_part( 'template-parts/about-team', 'none' ); ?>
-<!-- aboutus section area -->
-  
-
-
 <!-- testimonials section area -->
 <?php get_template_part( 'template-parts/testimonials', 'none' ); ?>
 <!-- testimonials section area -->
 
-
+<?php get_template_part( 'template-parts/footerhighlight', 'none' ); ?>
 
 <?php get_footer(); ?>
  

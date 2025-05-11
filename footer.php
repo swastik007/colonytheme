@@ -66,7 +66,7 @@
       <p>© <span>Copyright</span> <strong class="px-1 sitename">Colony</strong> <span>All Rights Reserved</span></p>
       <div class="credits">
         
-        Designed by <a href="#">VS Nepal</a>
+        Powered by <a href="#">VS Nepal</a>
       </div>
     </div>
 

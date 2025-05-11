@@ -79,3 +79,56 @@ jQuery(document).ready(function ($) {
     });
   
   });
+
+  $(document).ready(function(){
+    var owl = $(".team-carousel");
+    owl.owlCarousel({
+      loop: true,
+      margin: 30,
+      autoplay: true,
+      autoplayTimeout: 5000,
+      smartSpeed: 600,
+      nav: false,
+      dots: true,
+      responsive: {
+        0: { items: 1 },
+        640: { items: 2 },
+        768: { items: 3 },
+        1200: { items: 3 }
+      }
+    });
+
+    // Custom navigation
+    $(".js-custom-next").click(function(e){
+      e.preventDefault();
+      owl.trigger("next.owl.carousel");
+    });
+    $(".js-custom-prev").click(function(e){
+      e.preventDefault();
+      owl.trigger("prev.owl.carousel");
+    });
+  });
+
+  jQuery(document).ready(function($){
+    $('.testimonials-carousel').owlCarousel({
+      loop: true,
+      margin: 30,
+      nav: false,
+      dots: true,
+      autoplay: true,
+      autoplayTimeout: 5000,
+      smartSpeed: 600,
+      responsive: {
+        0: {
+          items: 1
+        },
+        768: {
+          items: 1
+        },
+        992: {
+          items: 1
+        }
+      }
+    });
+  });
+  
