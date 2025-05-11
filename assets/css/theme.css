@@ -21,6 +21,7 @@ h1, h2, h3, h4, h5 {
   text-align: center;
 }
 .section-title h2 {
+  width: -moz-fit-content;
   width: fit-content;
   margin: 0 auto;
   text-align: center;
@@ -451,7 +452,8 @@ h1, h2, h3, h4, h5 {
 .about-team .team-card img {
   width: 120px;
   height: 120px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 50%;
   border: 3px solid #e79a2e;
   display: flex;
@@ -579,7 +581,8 @@ h1, h2, h3, h4, h5 {
 .product-categories .items-grid .item-card img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   display: block;
 }
 .product-categories .items-grid .item-card .card-label {
@@ -592,7 +595,8 @@ h1, h2, h3, h4, h5 {
   font-size: 1.2rem;
   font-weight: 700;
   text-align: center;
-  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
   font-family: "Manrope", sans-serif;
   letter-spacing: 2px;
 }
@@ -611,7 +615,8 @@ h1, h2, h3, h4, h5 {
   width: 90px;
   height: 90px;
   border-radius: 50%;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
   border: 2px solid #f2f2f2;
   padding: 10px;
 }
@@ -661,7 +666,8 @@ h1, h2, h3, h4, h5 {
 .highlight-items-v2 .items-grid .item-card img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   display: block;
 }
 .highlight-items-v2 .items-grid .item-card .card-label {
@@ -674,7 +680,8 @@ h1, h2, h3, h4, h5 {
   font-size: 1.2rem;
   font-weight: 500;
   text-align: center;
-  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
 }
 
 @media (max-width: 768px) {
@@ -769,7 +776,8 @@ h1, h2, h3, h4, h5 {
 .message-chairman-section .content .quote-icon {
   width: 70px;
   height: 70px;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
   margin-left: 20px;
 }
 .message-chairman-section .content h2 {
@@ -900,7 +908,8 @@ h1, h2, h3, h4, h5 {
 .home-testimonial .testimonial-card .testimonial-header .testimonial-img {
   width: 60px;
   height: 60px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 50%;
   margin-right: 15px;
   border: 2px solid #007bff;

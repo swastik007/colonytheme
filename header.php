@@ -47,3 +47,15 @@
 
     </div>
   </header>
+  <script>
+document.addEventListener('DOMContentLoaded', function () {
+  const body = document.querySelector('body');
+  const mobileToggle = document.querySelector('.mobile-nav-toggle');
+
+  if (mobileToggle) {
+    mobileToggle.addEventListener('click', function () {
+      body.classList.toggle('mobile-nav-active');
+    });
+  }
+});
+</script>
