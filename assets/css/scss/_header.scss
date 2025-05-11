@@ -78,16 +78,13 @@ $primary: #f5a623;
   display: none;
   inset: 0;
   z-index: 9998;
-  background-color: rgba(0, 0, 0, 0.85);
   justify-content: center;
   align-items: center;
   text-align: center;
   transition: opacity 0.3s ease;
 
   ul {
-    background: #fff;
     padding: 30px 20px;
-    border-radius: 12px;
     list-style: none;
     display: flex;
     flex-direction: column;
@@ -99,8 +96,7 @@ $primary: #f5a623;
       color: #111;
       text-decoration: none;
 
-      &:hover,
-      &:active {
+      &:hover {
         color: #f5a623;
       }
     }

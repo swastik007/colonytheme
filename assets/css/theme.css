@@ -129,16 +129,13 @@ body.mobile-nav-active .mobile-nav-icons .mobile-nav-close {
   display: none;
   inset: 0;
   z-index: 9998;
-  background-color: rgba(0, 0, 0, 0.85);
   justify-content: center;
   align-items: center;
   text-align: center;
   transition: opacity 0.3s ease;
 }
 .navmenu-mobile ul {
-  background: #fff;
   padding: 30px 20px;
-  border-radius: 12px;
   list-style: none;
   display: flex;
   flex-direction: column;
@@ -150,7 +147,7 @@ body.mobile-nav-active .mobile-nav-icons .mobile-nav-close {
   color: #111;
   text-decoration: none;
 }
-.navmenu-mobile ul .nav-link:hover, .navmenu-mobile ul .nav-link:active {
+.navmenu-mobile ul .nav-link:hover {
   color: #f5a623;
 }
 .navmenu-mobile.show {
