@@ -22,13 +22,15 @@
      <!-- aboutus section area -->
   <?php get_template_part( 'template-parts/about-section', 'none' ); ?>
   <!-- aboutus section area -->
-
-  
-
 <!-- Chairman's message section area -->
     <?php get_template_part( 'template-parts/chairman-message', 'none' ); ?>
 <!-- Chairman's message section area -->
-
+ <!-- categories section area -->
+<?php get_template_part( 'template-parts/productcategories', 'none' ); ?>
+<!-- categories section area -->
+<!-- Products section area -->
+<?php get_template_part( 'template-parts/products-section', 'none' ); ?>
+<!-- Products section area -->
 
 
   

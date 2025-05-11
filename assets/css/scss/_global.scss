@@ -7,6 +7,16 @@ $primarylight: #e8dcc2;
   padding: 0;
   box-sizing: border-box;
 }
-body {
- 
+
+.section-title{
+  text-align: center;
+  h2{
+    width: fit-content;
+    margin: 0 auto;
+    text-align: center; 
+    font-family: 'DM Serif Display', serif;;
+  }
+  p{
+    font-family: 'Manrope', sans-serif ;
+  }
 }

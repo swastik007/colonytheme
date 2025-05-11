@@ -1,8 +1,8 @@
-<section class="highlight-items-v2" id="highlighted-items">
+<section class="product-categories" id="productcategories">
   
     <!-- Section Title -->
-  <div class="container section-title" data-aos="fade-up">
-    <h2">Products Categories</h2>
+  <div class="container section-title mb-5" data-aos="fade-up">
+    <h2>Products Categories</h2>
     <p><span>Check Our</span> <span class="description-title">Yummy product</span></p>
   </div><!-- End Section Title -->
   <div class="container">

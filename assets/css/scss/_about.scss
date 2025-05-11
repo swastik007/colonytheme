@@ -1,54 +1,60 @@
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
-.about .content {
-    background-color: rgba(0, 123, 255, 0.05); /* light blue background as an example */
-    padding: 40px;
-  }
-  
-  .about .content h3 {
+.about{
+  background-color: rgb(253, 253, 253);
+  padding-bottom: 5em;
+  h3 {
     font-size: 14px;
     font-weight: 700;
-    color: #007bff; /* static accent color */
+    color: $secondary; /* static accent color */
     text-transform: uppercase;
+    letter-spacing: 1px;
   }
-  
-  .about .content h2 {
+  h2 {
     font-size: 24px;
-    font-weight: 700;
+    font-weight: 500;
     color: #000; /* default heading color */
   }
-  
-  .about .content p {
+  p {
     margin: 15px 0 30px 0;
     line-height: 24px;
     color: #333; /* standard text color */
   }
-  
-  .about .content .btn-read-more {
+  .content {
+    background-color: #f2f7fb; /* light blue background as an example */
+    padding: 40px;
+    
+    
+  }
+  .about-img{
+    width: 100%;
+    height: 100%;
+  }
+  .btn-read-more {
     color: #fff; /* white text */
-    background: #007bff; /* blue background */
+    background: $primary; /* blue background */
     line-height: 0;
     padding: 15px 40px;
     border-radius: 4px;
     transition: 0.5s;
     box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    span {
+      font-weight: 600;
+      font-size: 16px;
+      letter-spacing: 1px;
+    }
+    i {
+      margin-left: 5px;
+      font-size: 18px;
+      transition: 0.3s;
+    }
+    &:hover{
+      i {
+        transform: translateX(5px);
+      }
+    }
   }
-  
-  .about .content .btn-read-more span {
-    font-family: Arial, sans-serif; /* default font fallback */
-    font-weight: 600;
-    font-size: 16px;
-    letter-spacing: 1px;
-  }
-  
-  .about .content .btn-read-more i {
-    margin-left: 5px;
-    font-size: 18px;
-    transition: 0.3s;
-  }
-  
-  .about .content .btn-read-more:hover i {
-    transform: translateX(5px);
-  }
+} 
   
